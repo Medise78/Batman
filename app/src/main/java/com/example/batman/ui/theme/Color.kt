@@ -42,10 +42,20 @@ val WhiteTrans6 = Color(0x0DFFFFFF)
 
 val TransFollowingDarkColor2: Color
     @Composable
-    get() = if(isSystemInDarkTheme()) BlackTrans2
+    get() = if (isSystemInDarkTheme()) BlackTrans2
     else WhiteTrans2
 
 val TransOppositeDarkColor4: Color
     @Composable
-    get() = if(isSystemInDarkTheme()) WhiteTrans4
+    get() = if (isSystemInDarkTheme()) WhiteTrans4
     else BlackTrans4
+
+val TransFollowingDarkColor1: Color
+    @Composable
+    get() = if (isSystemInDarkTheme()) ValoLightBlue
+    else Color.White
+
+val TransFollowingDarkColor3: Color
+    @Composable
+    get() = if (isSystemInDarkTheme()) Color.White
+    else ValoLightBlue

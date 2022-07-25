@@ -20,6 +20,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.batman.domain.model.MovieDetails
 import com.example.batman.domain.model.Movies
 import com.example.batman.presentation.movies_screen.MoviesViewModel
+import com.example.batman.ui.theme.TransFollowingDarkColor1
+import com.example.batman.ui.theme.TransFollowingDarkColor3
 
 
 @Composable
@@ -48,7 +50,7 @@ fun MovieItem(
                     ImageLoader(
                         image = data.poster,
                         contentDes = data.title ?: "",
-                        shape = MaterialTheme.shapes.medium
+                        shape = MaterialTheme.shapes.medium,
                     )
                 }
             }
@@ -57,7 +59,7 @@ fun MovieItem(
                 maxLines = 3,
                 overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.padding(top = 20.dp , start = 10.dp),
-                color = Color.White
+                color = TransFollowingDarkColor3
             )
             data.year?.also { date ->
                 Text(
@@ -66,7 +68,7 @@ fun MovieItem(
                         top = 10.dp,
                         start = 10.dp
                     ),
-                    color = Color.White
+                    color = TransFollowingDarkColor3
                 )
             }
         }

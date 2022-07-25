@@ -47,13 +47,13 @@ fun SplashScreen(navController: NavController) {
         }
     }
 
-    Column(modifier = Modifier.fillMaxSize().background(Color.Black) , horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(modifier = Modifier.fillMaxSize().background(Color.White) , horizontalAlignment = Alignment.CenterHorizontally) {
         Box(modifier = Modifier
             .fillMaxSize()
              , contentAlignment = Alignment.Center) {
-            Image(painter = rememberImagePainter(data = R.raw.batsignall , imageLoader = imageLoader) ,
+            Image(painter = rememberImagePainter(data = R.raw.bat , imageLoader = imageLoader) ,
                 contentDescription = "Logo" ,
-                modifier = Modifier.fillMaxSize())
+                modifier = Modifier.fillMaxSize(0.7f))
         }
     }
 }

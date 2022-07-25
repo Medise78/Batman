@@ -22,6 +22,7 @@ import com.example.batman.presentation.movies_screen.component.MovieItem
 import com.example.batman.ui.theme.ValoLightBlue
 import com.example.batman.util.Screen
 import com.example.batman.R
+import com.example.batman.ui.theme.TransFollowingDarkColor1
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -36,7 +37,7 @@ fun MoviesScreen(
     Scaffold(scaffoldState = scaffoldState) {
         Surface(
             modifier = Modifier.fillMaxSize(),
-            color = ValoLightBlue
+            color = TransFollowingDarkColor1
         ) {
 //            Image(
 //                painter = rememberImagePainter(data = R.drawable.bat),
